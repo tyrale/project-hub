@@ -1,0 +1,27 @@
+.project {
+  padding-top: 1em;
+  overflow: scroll;
+  width: 100%;
+}
+.project h1 {
+  padding-left: 1em;
+  position: absolute;
+}
+.project .scroller {
+  padding: 5em 1em 1em 2em;
+}
+.project .tl-node {
+  max-width: 300px;
+}
+.new {
+  opacity: 0.2;
+}
+.project.new { background-color: white !important;}
+.done .tl-stamp,
+.done .tl-content,
+.done a {
+  opacity: 0.3;
+}
+.done:before {
+  background-color:#ddd;
+}

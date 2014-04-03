@@ -23,11 +23,11 @@ body {
   background: #fff;
   color: #222222;
   font: 120%/1.4 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
-  padding: 1em;
+  padding: 0;
   -webkit-text-size-adjust: 100%; }
   @media all and (min-width: 40em) {
     body {
-      padding-left: 2em; } }
+      padding-left: 0em; } }
 
 a {
   color: gray;
@@ -70,14 +70,14 @@ h3 {
 /************Timeline**************/
 /* Timeline Container */
 .timeline {
-  border-left: 5px solid #dddddd;
-  padding-bottom: 3em;
+  border-top: 5px solid #dddddd;
+  padding-bottom: 0;
   position: relative; }
-  .timeline:before {
+  .timeline:after {
     content: "";
     position: absolute;
-    bottom: 0;
-    left: -1.47em;
+    top: -1.5em;
+    right: 0;
     width: 40px;
     height: 40px;
     border-radius: 40px;
@@ -87,14 +87,17 @@ h3 {
 /* Individual Timeline Item */
 .tl-node {
   padding-left: 1em;
+  padding-top: 1em;
   margin-bottom: 3em;
-  position: relative; }
+  position: relative;
+  display: inline-block;
+  margin-right: 3em;}
   .tl-node a {
     display: block; }
   .tl-node:before {
     content: "";
     position: absolute;
-    top: 0;
+    top: -1em;
     left: -0.95em;
     width: 20px;
     height: 20px;
